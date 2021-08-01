@@ -8,5 +8,10 @@ const fn: React.MouseEventHandler = (e) => {
 
 ReactDom.render(
     <div>
-        <Icon name="wechat" onClick={fn}/>
+        <Icon name="QQ"
+              onClick={fn}
+              onMouseEnter={() => console.log('enter')}
+              onMouseLeave={() => console.log('leave')}
+              onTouchStart={() => console.log('touch')}
+        />
     </div>, document.querySelector('#root'));
