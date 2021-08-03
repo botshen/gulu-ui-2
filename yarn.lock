@@ -6126,6 +6126,11 @@ pretty-format@^24.5.0:
     ansi-styles "^3.2.0"
     react-is "^16.8.4"
 
+prism-react-renderer@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.nlark.com/prism-react-renderer/download/prism-react-renderer-1.2.1.tgz#392460acf63540960e5e3caa699d851264e99b89"
+  integrity sha1-OSRgrPY1QJYOXjyqaZ2FEmTpm4k=
+
 private@^0.1.6:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
