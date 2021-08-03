@@ -2,7 +2,7 @@ import React from 'react';
 import Icon from './icon';
 
 
-const IconExample: React.FC = () => {
+const IconExample1: React.FC = () => {
     return (
         <div>
             <Icon name="alipay"/>
@@ -12,4 +12,4 @@ const IconExample: React.FC = () => {
     );
 };
 
-export default IconExample;
+export default IconExample1;
