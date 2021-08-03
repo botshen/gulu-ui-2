@@ -1,5 +1,6 @@
-rm -rf dist &&
-yarn build &&
+rm -rf doc
+rm -rf dist
+yarn doc &&
 cd doc &&
 git init &&
 git add . &&
