@@ -1,9 +1,13 @@
 import React from 'react';
+import Icon from './icon';
 
 const IconExample2: React.FunctionComponent = () => {
     return (
         <div>
-            example 2
+            <Icon name="complete"/>
+            <Icon name="question"/>
+            <Icon name="minus"/>
+            <Icon name="exclamation"/>
         </div>
     );
 };

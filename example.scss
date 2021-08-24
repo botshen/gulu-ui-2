@@ -2,7 +2,7 @@
 *::before {box-sizing: border-box;}
 *::after {box-sizing: border-box;}
 ul, ol {list-style: none;}
-h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+h3, h4, h5, h6 {font-weight: normal;}
 a { text-decoration: none; color: inherit; }
 pre {
   font-family: "Fira Code Medium", Consolas, monospace;
@@ -11,14 +11,20 @@ $padding: 16px;
 $main-color: #565273;
 $border-color: #eee;
 body {
+  background: #f6f8fa;
   font-size: 16px;
 }
+h3{
+  font-weight: bold;
+  color:$main-color ;
+}
 .site-page {
-  background: #ffffff;
+
   min-height: 100vh;
 }
 .site-main {
   padding-top: 16px;
+  margin-left: 20%;
 }
 .site-header {
   background: $border-color;
@@ -42,7 +48,7 @@ body {
     font-size: 18px;
   }
   ul {
-    min-width: 12em;
+    min-width: 16em;
     > li {
       a {
         color: #333;
@@ -61,7 +67,7 @@ body {
 }
 .site-footer {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   color: #666;
   padding: 16px 0;
   border-top: 1px solid $border-color;

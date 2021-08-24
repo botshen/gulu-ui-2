@@ -9,6 +9,7 @@ import './example.scss';
 import IconDemo from './lib/icon/icon.demo';
 
 
+
 const logo = require('./logo.png');
 
 ReactDOM.render(

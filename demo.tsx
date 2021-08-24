@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Highlight, {defaultProps} from "prism-react-renderer";
 import {useState} from 'react';
-import dracula from 'prism-react-renderer/themes/dracula';
+import github from 'prism-react-renderer/themes/github';
 
 interface Props {
     code: string;
@@ -10,7 +10,7 @@ interface Props {
 const Demo: React.FunctionComponent<Props> = (props) => {
     const [codeVisible, setCodeVisible] = useState(false);
     const code = (
-        <Highlight {...defaultProps} code={props.code} language="tsx" theme={dracula}>
+        <Highlight {...defaultProps} code={props.code} language="tsx" theme={github}>
             {({className, style, tokens, getLineProps, getTokenProps}) => (
                 <pre className={className} style={style}>
               {tokens.map((line, i) => (
