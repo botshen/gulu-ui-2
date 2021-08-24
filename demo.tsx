@@ -2,6 +2,7 @@ import * as React from 'react';
 import Highlight, {defaultProps} from "prism-react-renderer";
 import {useState} from 'react';
 import github from 'prism-react-renderer/themes/github';
+import './demo.scss'
 
 interface Props {
     code: string;
@@ -29,7 +30,7 @@ const Demo: React.FunctionComponent<Props> = (props) => {
             <div className="example">
                 {props.children}
             </div>
-            <div>
+            <div className="demoButton">
                 <button onClick={() => setCodeVisible(!codeVisible)}>查看代码</button>
                 {codeVisible && code}
             </div>
