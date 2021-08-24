@@ -8,9 +8,9 @@ const sc = scopedClassMaker('gu-layout');
 const Footer: React.FunctionComponent<Props> = (props) => {
   const {className, ...rest} = props;
   return (
-    <div className={sc('footer', {extra: className})} {...rest}>
+      <div className={sc('footer', {extra: className})} {...rest}>
         {props.children}
-    </div>
+      </div>
   );
 };
 
