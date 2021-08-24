@@ -9,7 +9,7 @@ import IconExample4 from './icon.example.4';
 const IconDemo = () => {
     return (
         <Fragment>
-            <h1>Icon图标</h1>
+            <h1>Icon 图标</h1>
             <Demo code={require('!!raw-loader!./icon.example.1.tsx').default}>
                 <h3>
                     方向性图标

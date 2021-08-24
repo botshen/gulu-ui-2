@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter as Router, Route, NavLink} from 'react-router-dom';
-import ButtonExample from './lib/button.example';
-
 import {Layout, Aside, Header, Content, Footer} from './lib/layout/layout';
 import './example.scss';
 import IconDemo from './lib/icon/icon.demo';
 import DialogDemo from './lib/dialog/dialog.demo';
 import LayoutDemo from './lib/layout/layout.demo';
-
+import Introduce from './introduce';
 
 
 const logo = require('./logo.png');
@@ -19,13 +17,17 @@ ReactDOM.render(
             <Header className="site-header">
                 <div className="logo">
                     <img src={logo} width="48" height="48" alt=""/>
-                    <span> XINUI </span>
+                    <span> 鑫UI </span>
                 </div>
             </Header>
             <Layout>
                 <Aside className="site-aside">
-                    <h2>组件</h2>
+
                     <ul>
+                        <li>
+                            <NavLink to="/introduce">介绍</NavLink>
+                        </li>
+                        <h2>组件</h2>
                         <li>
                             <NavLink to="/icon">Icon</NavLink>
                         </li>
@@ -38,9 +40,9 @@ ReactDOM.render(
                     </ul>
                 </Aside>
                 <Content className="site-main">
-                    <Route path="/" component={IconDemo}/>
+                    <Route path="/" component={Introduce} exact/>
+                    <Route path="/introduce" component={Introduce}/>
                     <Route path="/icon" component={IconDemo}/>
-                    <Route path="/button" component={ButtonExample}/>
                     <Route path="/dialog" component={DialogDemo}/>
                     <Route path="/layout" component={LayoutDemo}/>
                 </Content>
