@@ -1,12 +1,9 @@
-rm -rf doc
-rm -rf dist
-yarn doc &&
-cd doc &&
-git init &&
-git add . &&
-git commit -m "update" &&
-git branch -M master &&
-git remote add origin git@github.com:botshen/gulu-ui-2-website.git &&
-git push -f -u origin master &&
-cd -
-echo https://botshen.github.io/gulu-ui-2-website/example.html#/
+#!/bin/env bash
+
+yarn doc
+git checkout gh-pages
+mv -f doc/* ./
+git add .
+git commit -m "update"
+git push
+git checkout -

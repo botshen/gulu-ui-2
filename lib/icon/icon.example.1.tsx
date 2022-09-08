@@ -2,15 +2,14 @@ import React from 'react';
 import Icon from './icon';
 
 
-const IconExample1: React.FC = () => {
-    return (
-        <div>
-            <Icon name="up"/>
-            <Icon name="down"/>
-            <Icon name="left"/>
-            <Icon name="right"/>
-        </div>
-    );
+const IconExample1: React.FunctionComponent = () => {
+  return (
+    <div>
+      <Icon name="alipay"/>
+      <Icon name="wechat"/>
+      <Icon name="qq"/>
+    </div>
+  );
 };
 
 export default IconExample1;
