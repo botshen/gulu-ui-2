@@ -1,6 +1,6 @@
 {
   "name": "gulu-ui-2999",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "dist/lib/index",
   "types": "dist/lib/index",
@@ -12,7 +12,8 @@
     "doc": "cross-env NODE_ENV=production webpack --config webpack.config.doc.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
     "test": "cross-env NODE_ENV=test jest --config=jest.config.js --runInBand",
-    "ci": "cross-env NODE_ENV=test JEST_JUNIT_OUTPUT=./test-results/jest/results.xml jest --config=jest.config.js"  },
+    "ci": "cross-env NODE_ENV=test JEST_JUNIT_OUTPUT=./test-results/jest/results.xml jest --config=jest.config.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/botshen/gulu-ui-2.git"
